@@ -8,13 +8,21 @@
             border: 1px solid black;
             border-collapse: collapse;
         }
+        .block {
+            border: 1px solid black;
+            padding: 10px;
+            width: 30%;
+        }
+        img {
+
+        }
     </style>
 </head>
 <body>
 <h1>Kurbankhozha Sabira</h1>
 <h2>SE-2434</h2>
 <h3>About Me</h3>
-<p>I am 18 years old. I study at AITU</p>
+<p>I am 18 years old. I study at AITU. I learn Frontend Basics now. It is cool</p>
 <table>
     <tr>
         <th>
@@ -27,9 +35,9 @@
     <tr>
         <td>
             <ol>
+                <li>Programming</li>
                 <li>Reading</li>
                 <li>Walking</li>
-                <li>Programming</li>
                 <li>Movies</li>
             </ol>
         </td>
@@ -37,16 +45,18 @@
             <ul>
                 <li>Youtube</li>
                 <li>ChatGPT</li>
-                <li>Wikipedia</li>
+                <li>Something...</li>
             </ul>
         </td>
     </tr>
 </table>
 <img src="./Image.jpg" alt="My ID photo">
-<h4>Sites</h4>
-<p><a href="https://www.youtube.com/">Youtube</a></p>
-<p><a href="https://chatgpt.com">ChatGPT</a></p>
-<button type="button">Click Me</button>
+<div class="block">
+    <h4>Sites:</h4>
+    <p><a href="https://www.youtube.com/">Youtube</a></p>
+    <p><a href="https://chatgpt.com">ChatGPT</a></p>
+    <button type="button">Click Me</button>
+</div>
 <br>
 <table>
     <tr>
@@ -105,18 +115,19 @@
 <span>My mood: &#128515; &#128516; &#128513;</span>
 <br> <br>
 <form action="#" method="post">
-    <h3> Form:</h3>
+    <div class="block">
+        <h3> Form:</h3>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
 
-    <label for="name">Name:</label><br>
-    <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
 
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
+        <label for="color">Favorite Color:</label><br>
+        <input type="color" id="color" name="color"><br><br>
 
-    <label for="color">Favorite Color:</label><br>
-    <input type="color" id="color" name="color"><br><br>
-
-    <button type="submit">Submit</button>
+        <button type="submit">Submit</button>
+    </div>
 </form>
 </body>
 </html>
