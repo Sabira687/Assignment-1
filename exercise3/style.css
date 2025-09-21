@@ -1,20 +1,24 @@
-html {
-    margin: 0;
-}
-
 body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
     font-family: "Trirong", serif;
-    background-color: #d6f1ff;
+    background-color: #bbebff;
+}
+
+h2 {
+    margin: 0;
 }
 
 a {
     text-decoration: none;
 }
 
-.header, .footer {
+ul {
+    list-style-type: none;
+}
+
+#header, .footer {
     text-align: center;
     padding: 30px;
     background-color: midnightblue;
@@ -56,59 +60,40 @@ a {
     color: #5ac0ff;
 }
 
-.image {
-    width: 30%;
-    max-width: 500px;
-    height: auto;
-    display: inline-block;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px #888888;
-}
-
-.about h2 {
-    font-size: 30px;
-    letter-spacing: 2px;
-}
-
-.content {
-    margin: 30px;
-    width: calc(70% - 90px);
-    display: inline-block;
-}
-
-.career, .books {
-    display: inline-block;
-    width: 45%;
-}
-
-.career li, .books li {
-    margin-bottom: 5px;
-}
-
-.books li {
-    list-style-type: square;
-}
-
-.more {
-    text-align: center;
-    font-family: "Audiowide", sans-serif;
-    width: 200px;
-    margin-left: auto;
-    background-color: midnightblue;
-    padding: 15px;
+.main {
+    margin: 60px auto;
+    width: 1000px;
+    padding: 20px;
     border-radius: 10px;
+    border: 1px solid black;
+    background-color: #d6f1ff;
 }
 
-.more:hover {
-    transform: scale(1.1);
+form > label {
+    font-weight: bold;
+    font-size: 25px;
 }
 
-.more a {
+input[type=text], input[type=email], select, textarea {
+    width: 500px;
+    padding: 15px;
+    margin-left: 20px;
+}
+
+button {
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: midnightblue;
     color: white;
+    font-weight: bold;
+    transition-duration: 0.4s;
 }
 
-.more a:hover {
-    color: #5ac0ff;
+button:hover {
+    transform: scale(1.05);
+    color: #abc6ff;
+    background-color: #0e0e72;
 }
 
 .footer {
